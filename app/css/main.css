@@ -1,0 +1,197 @@
+/* Fix everything */
+* { margin: 0; padding: 0; box-sizing: border-box; line-height: 1; }
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	overflow: hidden;
+}
+
+a:link {
+	color: rgb(132, 189, 0);
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgb(120, 164, 0);
+}
+
+a:link:hover,
+a:link:focus {
+	text-decoration: underline;
+}
+
+::-moz-selection { background: rgb(132, 189, 0); color: #ffffff; }
+::selection { background: rgb(132, 189, 0); color: #ffffff; }
+
+.flex-horizontal {
+	display: flex;
+	flex-direction: row;
+}
+
+.flex-vertical {
+	display: flex;
+	flex-direction: column;
+}
+
+.flex-item {
+	flex: 1 1 auto;
+}
+
+.flex-item-fixed {
+	flex: 0 0 auto;
+}
+
+#CircusApp {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	font: 16px 'Fira Sans', 'Proxima Nova', sans-serif;
+	font-weight: 300;
+	background: #222222;
+	color: #eeeeee;
+}
+
+.app {
+	height: 100%;
+}
+
+.header {
+	background-color: rgb(132, 189, 0);
+	color: #ffffff;
+	justify-content: space-between;
+}
+
+.brand {
+	font-family: 'Poiret One';
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.header h1 {
+	font-size: 32px;
+	margin: 8px 8px 8px 16px;
+}
+
+.actions {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.actions li {
+	padding: 16px;
+}
+
+.sidebar {
+	background-color: #111111;
+	flex-basis: 320px;
+	padding: 16px;
+}
+
+.sidebar h2 {
+	color: #cccccc;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #333333;
+	margin-bottom: 16px;
+	font-weight: 400;
+}
+
+.sidebar ul {
+	font-size: 20px;
+	list-style-type: none;
+	margin-bottom: 32px;
+}
+
+.channel-list li a::before {
+	content: '#';
+	color: #888888;
+}
+
+.channel-view {
+	position: relative;
+}
+
+.channel-infobar {
+	background-color: rgba(51, 51, 51, 0.9);
+	padding: 8px 16px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: baseline;
+}
+
+.channel-name {
+	flex: 0 0 auto;
+	margin: 0;
+	font-weight: 400;
+	margin-right: 16px;
+	font-size: 24px;
+}
+
+.channel-topic {
+	flex: 1 1 auto;
+	color: #888888;
+	margin: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.message-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 56px 16px;
+	overflow-y: auto;
+	height: 0;
+}
+
+.message-list .message {
+	padding: 5px 10px;
+}
+
+.message-list .message.system {
+	color: #888888;
+	font-style: italic;
+}
+
+.message-list .message.unsent {
+	color: #888888;
+}
+
+.chatbox {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	font-size: 20px;
+	color: #ffffff;
+	font-weight: 300;
+}
+
+.chatbox input {
+	border: 0;
+	padding: 8px;
+	display: block;
+	outline: none;
+	background: rgba(51, 51, 51, 0.9);
+	color: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+.chatbox button {
+	display: block;
+	flex-basis: 40px;
+	background: rgba(132, 189, 0, 0.9);
+	border: none;
+	padding: 4px;
+	color: inherit;
+	font-size: 32px;
+	font-weight: 400;
+}

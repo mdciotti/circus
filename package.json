@@ -1,0 +1,38 @@
+{
+  "name": "circus-im",
+  "version": "0.1.0",
+  "description": "An open instant messaging application for the modern age.",
+  "dependencies": {
+    "body-parser": "1.14.1",
+    "browserid-verify": "0.1.2",
+    "cookie-parser": "1.4.0",
+    "csurf": "1.8.3",
+    "defaults": "1.0.3",
+    "errorhandler": "1.4.2",
+    "express": "4.13.3",
+    "express-session": "1.12.1",
+    "method-override": "2.3.5",
+    "minimist": "1.2.0",
+    "morgan": "1.6.1",
+    "serve-favicon": "2.3.0",
+    "socket.io": "1.3.7",
+    "uuid": "2.0.1"
+  },
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "serve": "node --harmony index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "im",
+    "instant",
+    "messaging",
+    "irc",
+    "chat",
+    "sockets",
+    "socket.io"
+  ],
+  "author": "Maxwell Ciotti",
+  "license": "MIT"
+}

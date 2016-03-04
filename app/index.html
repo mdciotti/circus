@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Circus</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,300,300italic,400italic,700,700italic,500italic,500|Poiret+One" rel="stylesheet" type="text/css">
+		<link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+		<!-- // <script async src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script> -->
+		<!-- // <script async src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script> -->
+		<!-- // <script async src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script> -->
+		<!-- // <script async src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script> -->
+		<script async src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script async src="https://login.persona.org/include.js"></script>
+		<script src="/socket.io/socket.io.js"></script>
+		<script defer src="js/main.js"></script>
+		<script defer src="js/formatter.js"></script>
+		<!-- // <script src="src/main.js" type="text/babel"></script> -->
+	</head>
+	<body>
+	<div id="CircusApp">
+		<header class="header flex-horizontal">
+			<h1 class="brand flex-item-fixed">Circus</h1>
+			<ul class="actions flex-item-fixed flex-horizontal">
+				<li class="current-user flex-item-fixed"></li>
+				<li class="sign-in flex-item-fixed">Sign In / Sign Up</li>
+			</ul>
+		</header>
+		<div class="flex-item flex-horizontal">
+			<nav class="sidebar flex-item-fixed">
+				<h2>Channels</h2>
+				<ul class="channel-list"></ul>
+				<h2>Users</h2>
+			</nav>
+			<div class="channel-view flex-item flex-vertical">
+				<div class="channel-infobar flex-item-fixed">
+					<h2 class="channel-name"></h2>
+					<p class="channel-topic"></p>
+				</div>
+				<ul class="message-list flex-item"></ul>
+				<form action="" class="chatbox flex-item-fixed flex-horizontal">
+					<input class="flex-item" autocomplete="off" />
+					<button class="flex-item-fixed" title="Send"><i class="ion-ios-paperplane-outline"></i></button>
+				</form>
+			</div>
+		</div>
+		</div>
+	</body>
+</html>
